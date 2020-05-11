@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="title">
+      <h1 class="game-title">Video Game Survey Form</h1>
+    </div>
+    <form>
+      <div class="container">
+        <form id="survey-form" method="GET">
+          <div class="labels">
+            <label id="name-label" for="name">Name</label>
+          </div>
+          <div class="input-tab">
+            <input
+              class="input-field"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+              autofocus
+            />
+          </div>
+
+          <div class="labels">
+            <label id="email-label" for="email">Email</label>
+          </div>
+          <div class="input-tab">
+            <input
+              class="input-field"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email@email.com"
+              required
+            />
+          </div>
+
+          <div class="labels">
+            <label id="number-label" for="number"
+              >Favorite game/games of all time</label
+            >
+          </div>
+          <div class="input-tab">
+            <input
+              class="input-field"
+              type="text"
+              id="favorite"
+              name="favorite"
+              placeholder="Super Mario Bros 3, God of War(PS4), Final Fantasy VII"
+              required
+            />
+          </div>
+
+          <div class="labels">
+            <label id="genre-label" for="genre"
+              >Favorite system to play games on</label
+            >
+          </div>
+          <div class="input-tab">
+            <select class="input-field">
+              <option value="actionadventure">PC</option>
+              <option value="fps">Xbox</option>
+              <option value="rpg">Playstation 4</option>
+              <option value="simulation">Nintendo Switch</option>
+            </select>
+          </div>
+
+          <div class="labels">
+            <label>Single player or muliplayer?</label>
+          </div>
+          <div class="input-tab">
+            <input
+              class="radio"
+              type="radio"
+              name="radio-button"
+              value="single-player"
+            />Single Player<br />
+            <input
+              class="radio"
+              type="radio"
+              name="radio-button"
+              value="multiplayer"
+            />Multiplayer<br />
+          </div>
+
+          <div class="labels">
+            <label
+              >Favorite video game genres<br />(Check as many as you
+              want.):</label
+            >
+          </div>
+          <div class="input-tab">
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="action"
+              value="action"
+            />Action/Adventure<br />
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="platform"
+              value="platform"
+            />Platformer<br />
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="rpg"
+              value="rpg"
+            />RPG<br />
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="fps"
+              value="fps"
+            />First Person Shooters<br />
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="strategy"
+              value="strategy"
+            />Strategy<br />
+          </div>
+
+          <!-- <div class="labels">
+            <label for="messages">Message</label>
+          </div>
+          <div class="input-tab">
+            <textarea
+              class="input-field"
+              id="message"
+              name="message"
+              rows="10"
+              cols="40"
+              placeholder="Your message..."
+            ></textarea>
+          </div> -->
+
+          <div class="btn">
+            <button id="submit" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </form>
+
+    <script src="/javascript/contact.js"></script>
+  </body>
+</html>
